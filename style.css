@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(161, 45, 64);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.app {
+  width: 760px;
+  max-width: 760px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  padding: 30px 0;
+  text-align: center;
+}
+
+.game-screen {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(192, 192, 192);
+  box-shadow: inset 0px 0px 15px 2px rgb(115 106 106);
+}
+.game-screen.start {
+  background-color: #f4f4f4;
+  box-shadow: none;
+  border: 2px solid #ccc;
+}
+.start-game {
+  background-color: rgb(161, 45, 64);
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #f4f4f4;
+  padding: 9px 15px;
+  cursor: pointer;
+  box-shadow: 0 0 5px 1px rgb(161, 45, 64);
+  transition: box-shadow 0.3s ease-out;
+}
+.hide {
+  display: none;
+}
+.start-game:hover {
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.7);
+}
+.game h1 {
+  color: rgb(161, 45, 64);
+  letter-spacing: 2px;
+}
+.time h4 {
+  color: rgb(161, 45, 64);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.time input {
+  border: none;
+  outline: none;
+  padding: 7px;
+  background-color: rgb(161, 45, 64);
+  border-radius: 3px;
+  color: #f4f4f4;
+  font-size: 18px;
+}
